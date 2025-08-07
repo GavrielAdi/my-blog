@@ -12,8 +12,14 @@ const posts = await getPosts(MAX_POSTS)
 
 <BaseLayout title='Home'>
 	<TitlePage title={siteConfig.title} />
+	<h2 class='text-lg font-medium tracking-wide'>
+		Selamat datang di ruang kecilku.<br />
+		Sebuah catatan laku, menjadi perajin setiap momen. Meramu intisari dari riuh mesin dan heningnya
+		sanubari.<br />
+		Lahirlah dari sana tembang-tembang kecil, yang dibagikan sebagai penanda waktu.<br />
+		Mari singgah dan merasakannya bersama.
+	</h2>
 	<ListCategories />
-
 	<div>
 		<h2 class='text-lg font-medium tracking-wide text-end'>Latest Posts</h2>
 		<ListPosts FirstBig={true} posts={posts} />
